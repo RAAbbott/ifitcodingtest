@@ -42,4 +42,56 @@ export default {
     .joinButton:hover {
         font-size: 14px;
     }
+
+    @media (max-width: 900px) {
+        .splashText {
+            font-size: 60px;
+        }
+
+        .splash {
+            height: 600px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .splashText {
+            font-size: 50px;
+        }
+
+        .splash {
+            height: 500px;
+        }
+
+        .joinButton {
+            top: 200px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .splashText {
+            font-size: 40px;
+        }
+
+        .splash {
+            height: 400px;
+        }
+
+        .joinButton {
+            top: 150px;
+        }
+    }
+
+    @media (max-width: 580px) {
+        .splashText {
+            font-size: 35px;
+        }
+
+        .splash {
+            height: 350px;
+        }
+
+        .joinButton {
+            top: 150px;
+        }
+    }
 </style>

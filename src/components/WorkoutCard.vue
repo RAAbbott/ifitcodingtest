@@ -17,7 +17,7 @@
               <img src="../assets/avatars/icn_timer_line.png" alt="timer"><span>{{this.workout.time}}</span><img src="../assets/avatars/icn_distance_line.png" alt="timer"><span> {{this.workout.distance}}</span>
           </div>
           <div :class="{'details': true, 'bottom': !this.workout.time}">
-              <a href="https://google.com">VIEW DETAILS</a>
+              <span href="https://google.com">VIEW DETAILS</span>
           </div>
       </div>
   </div>
@@ -107,16 +107,16 @@ export default {
         z-index: 1000;
     }
 
-    .details a {
+    .details span {
         position: relative;
         top:10px;
-        text-decoration: none;
         color: #0069D2;
         font-weight: bold;
         transition: font-size 0.2s ease-in-out;
+        cursor: pointer;
     }
 
-    .details a:hover {
+    .details span:hover {
         font-size: 15px;
     }
 

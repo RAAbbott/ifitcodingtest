@@ -31,7 +31,8 @@
           <img src="../assets/Fill-16-path.png" alt="">
       </div>
       <div class="bottom">
-          <div class="language" @click="toggleDropdown">{{language}} <img src="../assets/avatars/line.png" alt=""></div>
+          <span class="language" @click="toggleDropdown">{{language}} <img src="../assets/avatars/line.png" alt=""></span>
+          <!-- <br> -->
           <div ref="dropdown" class="dropdown" :style="{'display': isDropdownOpen ? '' : 'none'}">
               <ul>
                   <li v-for="item in languages" :key="item" @click="setLanguage(item)">{{item}}</li>
@@ -71,7 +72,7 @@ export default {
 
     created() {
         bus.$on('bodyClick', (event) => {
-            this.isDropdownOpen = event.target.classList.value.includes('language') ? true : false;
+            this.isDropdownOpen = event.target.classList.value.includes('language')
         })
     }
 };
@@ -111,6 +112,7 @@ export default {
     .column div:not(:first-child) {
         margin-top: 15px;
         opacity: .7;
+        cursor: pointer;
     }
 
     .social {
@@ -121,6 +123,7 @@ export default {
 
     .social img {
         margin: 15px 8px;
+        cursor: pointer;
     }
 
     .social img:nth-child(odd) {
@@ -154,7 +157,7 @@ export default {
     }
 
     .language img {
-        margin-left: 20px;
+        margin-left: 5px;
     }
     
     .dropdown {
@@ -183,9 +186,61 @@ export default {
 
     .copyright span{
         margin-right: 20px;
+        cursor: pointer;
     }
 
     .copyright span:first-child {
         margin-left: -60px;
+    }
+
+    @media (max-width: 900px) {
+        .links {
+            height: 208px;
+            width: 100%;
+            margin: auto;
+            text-align: justify;
+        }
+
+        .column {
+            float: left;
+            width: 33%;
+            margin-left: 0px;
+            margin-top: 25px;
+        }
+
+        .column:first-child {
+            margin-left: 100px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .column:first-child {
+            margin-left: 50px;
+        }
+
+        .social {
+            padding-right: 30px;
+        }
+
+        .bottom {
+            display: block;
+        }
+
+        .dropdown {
+           left: 200px;
+           bottom: 80px;
+        }
+
+        .copyright {
+            padding-top: 20px;
+        }
+
+        .copyright span:first-child {
+            margin-left: 0px;
+        }
+
+        .footer {
+            height: 380px;
+        }
     }
 </style>

@@ -18,6 +18,7 @@ export default {
         background-color: white;
         box-shadow: 0px 1px 1px #aaaaaa;
         transition: box-shadow 0.3s ease-in-out;
+        cursor: pointer;
     }
 
     .card:hover {

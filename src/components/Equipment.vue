@@ -63,4 +63,33 @@ export default {
             display: block;
         }
     }
+
+
+    @media (max-width: 900px) {
+        .sliderButtonRight {
+            top: 1819px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .sliderButtonRight {
+            top: 1719px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .sliderButtonRight {
+            top: 1619px;
+        }
+    }
+
+    @media (max-width: 580px) {
+        .sliderButtonRight {
+            top: 1569px;
+        }
+
+        .text {
+            font-size: 20px;
+        }
+    }
 </style>

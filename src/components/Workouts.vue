@@ -68,4 +68,28 @@ export default {
             display: block;
         }
     }
+
+    @media (max-width: 900px) {
+        .sliderButtonRight {
+            top: 1249px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .sliderButtonRight {
+            top: 1149px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .sliderButtonRight {
+            top: 1049px;
+        }
+    }
+
+    @media (max-width: 580px) {
+        .sliderButtonRight {
+            top: 999px;
+        }
+    }
 </style>
