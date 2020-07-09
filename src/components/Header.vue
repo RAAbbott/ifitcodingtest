@@ -36,6 +36,9 @@
                 <span class="option">NUTRITION</span>
                 <span class="option">ACTIVITY</span>
                 <span class="option">SLEEP</span>
+                <div class="signUp">
+                    <span class="signUpButton">SIGN UP</span>
+                </div>
             </div>
         </div>
     </div>
@@ -179,6 +182,10 @@ export default {
             align-content: space-between;
             height: 72px;
             border-bottom: solid rgba(0, 0, 0, 0.548) 0.4px;
+        }
+
+        .signUpButton {
+            margin-left: 25px;
         }
 
         .dropdown-menu {

@@ -25,6 +25,7 @@ export default {
         color: white;
         top: 25%;
         position: relative;
+        font-weight: 400;
     }
 
     .joinButton {
